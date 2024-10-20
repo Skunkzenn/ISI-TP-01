@@ -54,7 +54,10 @@ O objetivo do projeto foi extrair dados de um arquivo CSV, transformá-los confo
    ```bash
    dotnet run
 
+### 5. Acesse a aplicação web para visualizar os dados transformados no navegador.
 
+### Demonstração
+Assista à demonstração do projeto através do vídeo explicativo.
 
 ### 5. Acesse a aplicação web para visualizar os dados transformados no navegador.
 
