@@ -1,0 +1,61 @@
+﻿@{
+    ViewBag.Title = "Consultar Vendas de Consolas";
+}
+
+<h2>Consultar Vendas de Consolas</h2>
+
+<form asp-action="Index" method="post">
+    <div class="form-group">
+        <label for="consola">Escolha a Consola:</label>
+        <select id="consola" name="consola" class="form-control">
+            <option value="xbox360">Xbox 360</option>
+            <option value="nintendods">Nintendo DS</option>
+            <option value="nintendowii">Nintendo Wii</option>
+            <option value="playstation3">Playstation 3</option>
+            <option value="sonypsp">Sony PSP</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="inicio">Data de Início:</label>
+        <input type="text" id="inicio" name="inicio" class="form-control" placeholder="dd/mm/yyyy" maxlength="10" required />
+    </div>
+
+    <div class="form-group">
+        <label for="fim">Data de Fim:</label>
+        <input type="text" id="fim" name="fim" class="form-control" placeholder="dd/mm/yyyy" maxlength="10" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Buscar Vendas</button>
+</form>
+
+<script>
+    document.getElementById('inicio').addEventListener('input', function (e) {
+        this.value = formatarData(this.value);
+    });
+
+    document.getElementById('fim').addEventListener('input', function (e) {
+        this.value = formatarData(this.value);
+    });
+
+    function formatarData(value) {
+        // Remove todos os caracteres que não sejam números
+        value = value.replace(/\D/g, '');
+
+        // Adiciona a barra após o dia e o mês
+        if (value.length >= 2) value = value.slice(0, 2) + '/' + value.slice(2);
+        if (value.length >= 5) value = value.slice(0, 5) + '/' + value.slice(5, 9);
+
+        // Limita a quantidade máxima de caracteres
+        return value.slice(0, 10);
+    }
+</script>
+
+
+
+@if (ViewBag.Error != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}

@@ -1,0 +1,4 @@
+# SHOW COLUMNS FROM allgames;
+
+ALTER TABLE allgames
+MODIFY Nota INT;

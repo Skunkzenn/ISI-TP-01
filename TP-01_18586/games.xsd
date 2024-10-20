@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="Rows">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Row" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="Titulo" type="xs:string"/>
+                            <xs:element name="MaximoJogadores" type="xs:string"/>
+                            <xs:element name="Multiplataforma" type="xs:string"/>
+                            <xs:element name="Genero" type="xs:string"/>
+                            <xs:element name="Fabricante" type="xs:string" minOccurs="0"/>
+                            <xs:element name="Nota" type="xs:integer"/>
+                            <xs:element name="Vendas" type="xs:decimal"/>
+                            <xs:element name="Preco" type="xs:decimal"/>
+                            <xs:element name="Consola" type="xs:string"/>
+                            <xs:element name="AnoLancamento" type="xs:string"/>
+							<xs:element name="result" type="xs:hexBinary"/>
+							<xs:element name="result2" type="xs:string"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

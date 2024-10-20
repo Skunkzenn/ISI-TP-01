@@ -1,0 +1,23 @@
+﻿@model List<ConsolaVendaDTO>
+
+<h2>Resultados de Vendas</h2>
+
+<p>Consulta realizada entre <strong>@ViewBag.DataInicio</strong> e <strong>@ViewBag.DataFim</strong></p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Consola</th>
+            <th>Total de Vendas</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var venda in Model)
+        {
+            <tr>
+                <td>@venda.Consola</td>
+                <td>@venda.TotalVendasFormatted</td>
+            </tr>
+        }
+    </tbody>
+</table>
