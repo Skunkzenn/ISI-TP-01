@@ -53,7 +53,7 @@ O objetivo do projeto foi extrair dados de um arquivo CSV, transformá-los confo
 ### 4. Execute a API com o seguinte comando na raiz do projeto ASP.NET Core:
 
  ```bash
-dotnet run
+  dotnet run
 
 ### 5. Acesse a aplicação web para visualizar os dados transformados no navegador.
 
