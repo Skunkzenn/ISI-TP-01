@@ -38,7 +38,7 @@ O objetivo do projeto foi extrair dados de um arquivo CSV, transformá-los confo
 
 - [Pentaho Data Integration](https://sourceforge.net/projects/pentaho/)
 - [MySQL](https://www.mysql.com/)
-- [.NET 6 SDK](https://dotnet.microsoft.com/download)
+- [.NET 8 SDK](https://dotnet.microsoft.com/download)
 
 ### Passos
 
