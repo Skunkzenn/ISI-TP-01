@@ -42,7 +42,7 @@ O objetivo do projeto foi extrair dados de um arquivo CSV, transformá-los confo
 
 ### Passos
 
-1. Clone o repositório:
+1. **Clone o repositório**:
    ```bash
    git clone https://github.com/Skunkzenn/ISI-TP-01.git
 
@@ -50,7 +50,7 @@ O objetivo do projeto foi extrair dados de um arquivo CSV, transformá-los confo
 
 ### 3. Importe o job e transformações no Pentaho para processar o arquivo CSV.
 
-4. Execute a API com o seguinte comando na raiz do projeto ASP.NET Core:
+4. **Execute a API com o seguinte comando na raiz do projeto ASP.NET Core**:
    ```bash
    dotnet run
 
